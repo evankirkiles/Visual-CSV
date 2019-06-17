@@ -1,0 +1,171 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 30px;
+  overflow: hidden;
+}
+
+table {
+  margin: auto 20px auto 20px;
+  flex-grow: 2;
+}
+
+#tableview {
+  height: calc(100vh - 123px);
+  align-self: flex-start;
+  overflow: auto;
+}
+
+#bigHeader {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  flex-direction: row;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+#numRows {
+  position: relative;
+  top: 33px;
+  left: 100px;
+  font-size: 15px;
+  opacity: 0.4;
+}
+
+#spacer {
+  flex-grow: 2;
+}
+
+#prodTitle {
+  font-size: 35px;
+}
+
+#listLayout {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  margin-right: 20px;
+}
+
+#listTitle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+#csvupload {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+caption {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 12px 0;
+}
+
+thead th {
+  background: #546e7a;
+  color: #fff;
+  font-weight: initial;
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+  z-index: 10;
+}
+
+tr { background: #f1f1f1; }
+
+tr:nth-child(2n) { background: #e0e0e0; }
+
+th, td {
+  text-align: left;
+  padding: 24px;
+  white-space: nowrap;
+}
+
+#mainlayout {
+	display: flex;
+	height: 100%;
+	flex-direction: row;
+	align-content: center;
+	justify-content: flex-start;
+}
+
+#columnAddLayout {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+}
+
+#searchLayout {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+}
+
+#columnToAdd {
+  margin-bottom: 10px;
+  flex-grow: 2;
+  margin-right: 10px;
+}
+
+#searchText {
+  flex-grow: 2;
+  margin-left: 10px;
+}
+
+#addCol {
+  width: 50px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #708C98;
+  color: #fff;
+}
+
+#download {
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: #708C98;
+  color: #fff;
+}
+
+#filters {
+  list-style: none;
+  overflow-y: auto;
+  max-height: calc(100vh - 320px);
+}
+
+#searchText {
+  margin-bottom: 15px;
+}
+
+.deletecolumn {
+  opacity: 0.5;
+  background-color: #708C98;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+}
+
+li {
+	margin-bottom: 5px;
+}

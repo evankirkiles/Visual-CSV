@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="index.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.3/jquery.csv.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div id="bigHeader">
+			<span id="prodTitle"><b>CSV Visualizer</b></span>
+			<div id="spacer"> </div>
+			<span id="numRows"><i>Query parameters matched <span id="actualNumRows">??</span> rows.</i></span>
+			<button id="download" onclick="download()">DOWNLOAD</button>
+		</div>
+		<div id="mainlayout">
+			<div id="listLayout" style="width: 250px">
+				<span id="listTitle">SELECT FILE</span>
+				<input type="file" id="csvupload"/>
+				<span id="listTitle">VIEW COLUMN</span>
+				<div id="columnAddLayout">
+					<select id="columnToAdd">
+					</select>
+					<button id="addCol" onclick="addColumn()">ADD</button>
+				</div>
+				<span id="listTitle">SEARCH</span>
+				<div id="searchLayout">
+					<input type="checkbox" id="applySearch">
+					<input type="text" id="searchText">
+				</div>
+				<span id="listTitle">FILTERS</span>
+				<form id="filters">
+					<ul style="width:250px;" id="filters">
+					</ul>
+				</form>
+			</div>
+			<div id="tableview">
+				<table id="tableitself">
+					<thead id="tablehead">
+					</thead>
+					<tbody id="tabledisplay">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
