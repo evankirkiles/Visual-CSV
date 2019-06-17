@@ -29,9 +29,11 @@ $(document).ready(function() {
                 var contents = reader.result;
                 csvData = contents.trim().split('\n');
 
-                //////
                 for (let i = 0; i < csvData.length; i++) {
-                    csvData[i] = csvData[i].split(', ');
+                    csvData[i] = csvData[i].split(',');
+                    for (let j = 0; j < csvData[0].length; j++) {
+                        csvData[i][j] = csvData[i][j].trim();
+                    }
                 }
                 colsToShow = [...Array(50).keys()];
                 updateFilters();
